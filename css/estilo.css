@@ -21,18 +21,11 @@ header {
     box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2);
 }
 
-.menus {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 50px;
-}
-
 .menus li {
     list-style: none;
     color: #FFFFFF;
     font-weight: bold;
-    font-size: 20px;
+    font-size: 16px;
     transition: transform 0.3s;
 }
 
@@ -40,30 +33,166 @@ header {
     transform: scale(1.2);
 }
 
-.btnAssine {
-    background-color: #FFF;
-    color: green;
-    border-radius: 50px;
-    width: 185px;
-    height: 50px;
-    font-weight: bold;
-    border: solid 1px green;
-    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2);
+.menus li a:hover {
+    color: #128f12;
+}
+
+/*Btn Central do assinante*/
+button {
+    position: relative;
+    padding: 12px 35px;
+    background: #0e9a02;
+    font-size: 17px;
+    font-weight: 500;
+    color: #fff;
+    border: 3px solid #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 0 0 #fec1958c;
+    transition: all 0.3s ease-in-out;
     cursor: pointer;
-}
-
-.btnAssine:hover {
-    background-color: #32CD32;
-}
-
-.btnAssine a {
+  }
+  
+  .star-1 {
+    position: absolute;
+    top: 20%;
+    left: 20%;
+    width: 25px;
+    height: auto;
+    filter: drop-shadow(0 0 0 #fffdef);
+    z-index: -5;
+    transition: all 1s cubic-bezier(0.05, 0.83, 0.43, 0.96);
+  }
+  
+  .star-2 {
+    position: absolute;
+    top: 45%;
+    left: 45%;
+    width: 15px;
+    height: auto;
+    filter: drop-shadow(0 0 0 #fffdef);
+    z-index: -5;
+    transition: all 1s cubic-bezier(0, 0.4, 0, 1.01);
+  }
+  
+  .star-3 {
+    position: absolute;
+    top: 40%;
+    left: 40%;
+    width: 5px;
+    height: auto;
+    filter: drop-shadow(0 0 0 #fffdef);
+    z-index: -5;
+    transition: all 1s cubic-bezier(0, 0.4, 0, 1.01);
+  }
+  
+  .star-4 {
+    position: absolute;
+    top: 20%;
+    left: 40%;
+    width: 8px;
+    height: auto;
+    filter: drop-shadow(0 0 0 #fffdef);
+    z-index: -5;
+    transition: all 0.8s cubic-bezier(0, 0.4, 0, 1.01);
+  }
+  
+  .star-5 {
+    position: absolute;
+    top: 25%;
+    left: 45%;
+    width: 15px;
+    height: auto;
+    filter: drop-shadow(0 0 0 #fffdef);
+    z-index: -5;
+    transition: all 0.6s cubic-bezier(0, 0.4, 0, 1.01);
+  }
+  
+  .star-6 {
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    width: 5px;
+    height: auto;
+    filter: drop-shadow(0 0 0 #fffdef);
+    z-index: -5;
+    transition: all 0.8s ease;
+  }
+  
+  button:hover {
+    background: transparent;
+    color: #fec195;
+    box-shadow: 0 0 25px #fec1958c;
+  }
+  
+  button:hover .star-1 {
+    position: absolute;
+    top: -80%;
+    left: -30%;
+    width: 25px;
+    height: auto;
+    filter: drop-shadow(0 0 10px #fffdef);
+    z-index: 2;
+  }
+  
+  button:hover .star-2 {
+    position: absolute;
+    top: -25%;
+    left: 10%;
+    width: 15px;
+    height: auto;
+    filter: drop-shadow(0 0 10px #fffdef);
+    z-index: 2;
+  }
+  
+  button:hover .star-3 {
+    position: absolute;
+    top: 55%;
+    left: 25%;
+    width: 5px;
+    height: auto;
+    filter: drop-shadow(0 0 10px #fffdef);
+    z-index: 2;
+  }
+  
+  button:hover .star-4 {
+    position: absolute;
+    top: 30%;
+    left: 80%;
+    width: 8px;
+    height: auto;
+    filter: drop-shadow(0 0 10px #fffdef);
+    z-index: 2;
+  }
+  
+  button:hover .star-5 {
+    position: absolute;
+    top: 25%;
+    left: 115%;
+    width: 15px;
+    height: auto;
+    filter: drop-shadow(0 0 10px #fffdef);
+    z-index: 2;
+  }
+  
+  button:hover .star-6 {
+    position: absolute;
+    top: 5%;
+    left: 60%;
+    width: 5px;
+    height: auto;
+    filter: drop-shadow(0 0 10px #fffdef);
+    z-index: 2;
+  }
+  
+  .fil0 {
+    fill: #fffdef;
+  }
+  
+  .fundoBtnAssine button a{
     text-decoration: none;
-    color: green;
-}
+    color: #fff;
+  }
 
-.btnAssine a:hover {
-    color: #FFFFFF;
-}
 
 /*banner*/
 .fundoBanner img {
@@ -81,13 +210,27 @@ header {
     align-items: center;
     flex-wrap: wrap;
     gap: 20px;
+    margin-top: 10px;
+    box-shadow:7px -10px 20px rgba(0, 0, 0, 1.2),
+     7px 10px 20px rgba(0, 0, 0, 1.2);
+    
 }
 
+
 .produto {
+    background-color: #e6e6e6;
+    border-radius: 20px;
     display: flex;
     width: 310px;
     height: 110px;
     gap: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 1.2);
+    transition: transform 0.3s ease-in-out;
+    padding: 10px;
+}
+
+.produto:hover {
+    transform: scale(1.05);
 }
 
 .imgProduto {
@@ -96,9 +239,13 @@ header {
     align-items: center;
 }
 
+.textoProduto h4{
+    font-size: 20px;
+}
+
 .imgProduto img {
-    width: 100px;
-    height: 100px;
+    width: 80px;
+    height: 80px;
 }
 
 /*Planos*/
@@ -117,11 +264,13 @@ header {
     justify-content: center;
     align-items: center;
     gap: 20px;
+    margin-top: 10px;
 }
 
 .wifiTexto img {
     width: 50px;
     height: 50px;
+    margin-top: 10px;
 }
 
 .wifiTexto h4 {
@@ -129,6 +278,7 @@ header {
     font-weight: bold;
     color: #32CD32;
     font-style: italic;
+    margin-top: 10px;
 }
 
 .wifiTexto h4 strong {
@@ -172,8 +322,8 @@ header {
     background-color: green;
     text-align: center;
     padding: 10px;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
 }
 
 .topoCard h3 {
@@ -222,6 +372,10 @@ header {
 .item {
     font-family: "Dubai Light";
     list-style-type: none;
+}
+
+.fundoAssineAgora{
+    margin-bottom: 10px;
 }
 
 .btnAssineAgora {
@@ -312,9 +466,9 @@ header {
 /*Responsivo*/
 @media (max-width: 768px) {
     header {
-        flex-direction: column;
+        /* flex-direction: column; */
         height: auto;
-        justify-content: center;
+        justify-content: space-around;
         align-items: center;
         gap: 10px
     }
